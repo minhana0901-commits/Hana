@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Kompetisi</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Registrasi Peserta Kompetisi</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td class="label-col"><label for="namatim"><strong>Nama Regu / Tim</strong></label></td>
+                    <td><input type="text" id="namatim" name="namatim" class="input-text" placeholder="Masukkan nama tim..." /></td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="ketua"><strong>Nama Ketua Regu</strong></label></td>
+                    <td><input type="text" id="ketua" name="ketua" class="input-text" placeholder="Masukkan nama ketua..." /></td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="jumlah"><strong>Jumlah Anggota Tim</strong></label></td>
+                    <td>
+                        <select id="jumlah" name="jumlah" class="input-select">
+                            <option>1 Anggota</option>
+                            <option>2 Anggota</option>
+                            <option>3 Anggota</option>
+                            <option>4 Anggota</option>
+                            <option>5 Anggota</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="telepon"><strong>Kontak / No. WhatsApp</strong></label></td>
+                    <td><input type="text" id="telepon" name="telepon" class="input-text" placeholder="08xxxxxxxxxx" /></td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="universitas"><strong>Asal Perguruan Tinggi</strong></label></td>
+                    <td><input type="text" id="universitas" name="universitas" class="input-text" placeholder="Nama universitas/institut..." /></td>
+                </tr>
+                <tr>
+                    <td class="label-col" style="vertical-align:top;"><strong>Kategori Kompetisi</strong></td>
+                    <td>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" id="coding" name="bidang" value="Coding" /> Pemrograman (Coding)</label>
+                            <label><input type="checkbox" id="desain" name="bidang" value="Desain" /> Desain Grafis (UI/UX)</label>
+                            <label><input type="checkbox" id="video" name="bidang" value="Video" /> Videografi / Sinematografi</label>
+                            <label><input type="checkbox" id="essay" name="bidang" value="Essay" /> Penulisan Esai Ilmiah</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col"><strong>Kategori Peserta</strong></td>
+                    <td>
+                        <div class="radio-group">
+                            <label><input type="radio" id="mahasiswa" name="peserta" value="Mahasiswa" /> Mahasiswa Active</label>
+                            <label><input type="radio" id="umum" name="peserta" value="Umum" /> Peserta Umum</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col" style="vertical-align:top;"><label for="deskripsi"><strong>Ringkasan / Deskripsi Karya</strong></label></td>
+                    <td><textarea id="deskripsi" name="deskripsi" rows="5" cols="30" placeholder="Jelaskan secara singkat mengenai karya Anda..."></textarea></td>
+                </tr>
+                <tr>
+                    <td class="label-col" style="vertical-align:top;"><label for="alasan"><strong>Motivasi Mengikuti Lomba</strong></label></td>
+                    <td><textarea id="alasan" name="alasan" rows="4" cols="30" placeholder="Tuliskan motivasi dan alasan tim Anda..."></textarea></td>
+                </tr>
+                <tr>
+                    <td class="label-col"><label for="filekarya"><strong>Dokumen / File Karya</strong></label></td>
+                    <td><input type="file" id="filekarya" name="filekarya" accept="application/pdf, image/jpeg, image/png" class="input-file" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center; padding-top: 15px;">
+                        <input type="submit" name="daftar" value="Kirim Pendaftaran" class="btn-submit" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
