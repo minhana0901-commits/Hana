@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #0d47a1;
+    margin-bottom: 25px;
+    font-size: 24px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px 8px;
+    vertical-align: middle;
+}
+
+.label-col {
+    width: 35%;
+    color: #444;
+}
+
+.input-text, .input-select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.input-text:focus, .input-select:focus, textarea:focus {
+    border-color: #1976d2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+}
+
+.checkbox-group label, .radio-group label {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.input-file {
+    font-size: 14px;
+}
+
+.btn-submit {
+    background-color: #1976d2;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+}
